@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import { NavBar, Nav, NavItem } from 'react-bootstrap';
 
-const Navigation = React.createClass ({
-  render: function () {
+class Navigation extends Component {
+  render () {
     return (
       <nav className="navbar navbar-default navbar-static-top">
         <div className="container">
@@ -19,6 +18,6 @@ const Navigation = React.createClass ({
       </nav>
     );
   }
-});
+}
 
 module.exports = Navigation;

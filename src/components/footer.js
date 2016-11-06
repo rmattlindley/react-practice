@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { footer } from 'react-bootstrap';
 
-var Footer = React.createClass ({
-  render: function () {
+class Footer extends Component {
+  render () {
     var thisYear = new Date().getFullYear();
     return (
       <footer id="footer">
@@ -12,6 +12,6 @@ var Footer = React.createClass ({
       </footer>
     );
   }
-});
+}
 
 module.exports = Footer;

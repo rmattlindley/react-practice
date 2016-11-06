@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 import Navigation from './components/nav';
 import Footer from './components/footer';
+import ObjectList from './components/object-list';
 
 
 class App extends Component {
@@ -15,6 +15,7 @@ class App extends Component {
             <div className="container">
               <h1>Hello.</h1>
               <p>This is where content will go.</p>
+               <ObjectList data={this.props.data}/>
             </div>
           </div>
           <Footer />
