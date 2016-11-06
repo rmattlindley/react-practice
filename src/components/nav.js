@@ -4,7 +4,7 @@ import { NavBar, Nav, NavItem } from 'react-bootstrap';
 const Navigation = React.createClass ({
   render: function () {
     return (
-      <nav className="navbar navbar-inverse navbar-static-top">
+      <nav className="navbar navbar-default navbar-static-top">
         <div className="container">
           <div className="navbar-header">
             <a className="navbar-brand" href="#">Project name</a>
