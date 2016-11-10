@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';
 
 class Navigation extends Component {
   render () {
@@ -6,14 +7,17 @@ class Navigation extends Component {
       <nav className="navbar navbar-default navbar-static-top">
         <div className="container">
           <div className="navbar-header">
-            <a className="navbar-brand" href="#">Project name</a>
+            <Link className="navbar-brand" to="/">Project name</Link>
           </div>
-          <ul className="nav navbar-nav navbar-right">
-            <li><a href="#">Add Item</a></li>
-          </ul>
           <form className="navbar-form navbar-right">
             <input type="text" className="form-control" placeholder="Search..." />
           </form>
+          <ul className="nav navbar-nav navbar-right">
+            <li><Link to="/data-list" activeClass={ 'active' }>Data</Link></li>
+            <li><Link to="/graphs" activeClass={ 'active' }>Graphs</Link></li>
+            <li><Link to="/about" activeClass={ 'active' }>About</Link></li>
+            <li><Link to="/contact" activeClass={ 'active' }>Contact</Link></li>
+          </ul>
         </div>
       </nav>
     );
