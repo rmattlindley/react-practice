@@ -13,10 +13,10 @@ class Navigation extends Component {
             <input type="text" className="form-control" placeholder="Search..." />
           </form>
           <ul className="nav navbar-nav navbar-right">
-            <li><Link to="/data-list" activeClass={ 'active' }>Data</Link></li>
-            <li><Link to="/graphs" activeClass={ 'active' }>Graphs</Link></li>
-            <li><Link to="/about" activeClass={ 'active' }>About</Link></li>
-            <li><Link to="/contact" activeClass={ 'active' }>Contact</Link></li>
+            <li><Link to="/data-list" activeClassName="active">Data</Link></li>
+            <li><Link to="/graphs" activeClassName="active">Graphs</Link></li>
+            <li><Link to="/about" activeClassName="active">About</Link></li>
+            <li><Link to="/contact" activeClassName="active">Contact</Link></li>
           </ul>
         </div>
       </nav>
